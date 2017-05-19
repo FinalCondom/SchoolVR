@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class MenuTimer : MonoBehaviour {
-    public Text text;
+    private Text text;
     private float timer = 0;
     private SceneManager manager = new SceneManager();
     void Start()
@@ -32,5 +32,6 @@ public class MenuTimer : MonoBehaviour {
             manager.loadLevel("SelectionMenu");
         }
         //text.text = "TIMER : " + timer;
+         
     }
 }
